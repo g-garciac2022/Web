@@ -3,12 +3,26 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
-.img {
+
+img {
 
     height: 50px;
     width: 120px;
 
 }
+
+.game {
+    text-decoration: none;
+
+
+
+}
+.game:hover{
+
+background-color: silver;
+
+}
+
 .container {
     margin-top: 20px;
 }
@@ -27,6 +41,7 @@ body {
 /* Tarjetas de videojuegos */
 .card {
     margin-bottom: 20px;
+    
 }
 
 .card-title {
