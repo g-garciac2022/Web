@@ -5,3 +5,11 @@ nav{
 body{
     background-color: whitesmoke;
 }
+.card-body{
+    border-width: 1cap;
+    border: solid darkgray;
+    
+}
+.reseña-usuario{
+    border-radius: 5px !important;
+}
