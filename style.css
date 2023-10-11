@@ -9,6 +9,25 @@ body {
 .container {
     margin-top: 20px;
 }
+.card-title {
+    font-size: 24px; /* Tamaño de fuente personalizado */
+    color: #333; /* Color de texto personalizado */
+}
+
+.card-text {
+    color: #777; /* Color de texto personalizado */
+}
+
+/* Estilos para el enlace cuando se hace hover */
+.game {
+    text-decoration: none; /* Quitar el subrayado al hacer hover */
+    color: #007bff; /* Cambiar el color del enlace al hacer hover */
+}
+.cuerpo:hover{
+    background-color:lightgrey;
+border-radius: 10;
+
+}
 
 .header {
     background-color: #343a40;
@@ -27,20 +46,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 20px;
+    
 }
 
-.card-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 .card-body {
-    margin-top: 20px; /* Aumenta el margen superior aquí */
+    padding: 20px; /* Aumenta el margen superior aquí */
 }
 
-.card-text {
-    font-size: 18px;
-}
+
 
 /* Botones */
 .btn-primary {
