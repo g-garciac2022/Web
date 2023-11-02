@@ -1,5 +1,5 @@
 <!-- TO DO :
-Arreglar Hover
+Arreglar Hover Navbar
 estilo y botón página
 
 
@@ -10,126 +10,89 @@ estilo y botón página
 
 
 
-<!DOCTYPE html>
+<!DOCTYPE html> <!--caracteristicas comunes -->
 <html lang="es">
 
-<head>
+<head>  <!--Cabecera de la página-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para que se adapte a la pantalla. Sin zoom-->
     <title>Tienda de Videojuegos</title>
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!--importamos bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"> </script>
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" /> <!--referencia a la pagina css-->
 
 </head>
 
-<body>
+<body>  <!-- Cuerpo de la página -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Mantener nav ¿Qué hace?-->
-            <a class="navbar-brand" href="#">Software de Videojuegos</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Mantener nav ¿Qué hace?     barra de navegacion-->
+            <a class="navbar-brand" href="#">Software de Videojuegos</a> <!--Cambiar href para incluir-->
         </nav>
     </header>
 
     <div class="container mt-4">
         <h2 class="text-center">Catálogo de Videojuegos</h2>
     </div>
-    <div class="container-fluid th1 mb-5">
-        <div class="row" style="max-height: none;">
-            <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> <!-- Al no funcionar el tamaño especifico para movil, este apaño pone el margen en todos a 5 salvo en PC PREGUNTAR COMO ARREGLAR-->
-                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1">
+    <div class="container-fluid th1 mb-5"> <!--Th1 es el nombre, lo he puesto porque me mola, mb5 (margen inferior) para dispositivos medios-->
+        <div class="row"> <!--Organizacion en filas de bootstrap-->
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> <!-- Al no funcionar el tamaño especifico para movil, este apaño pone el margen en todos a 5 salvo en PC-->
+                <!-- Columna con ancho medio en dispositivos grandes, sin margen en dispositivos medianos o pequeños, margen inferior comun e imagen redimensionable -->
+                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1"> <!--Cambiar imagen por la que queramos, alt es texto alternativo-->
             </div>
-            <div class="col-md-8 tarjeta">
-                <div class="card text-center" style="height: 100%;">
-                    <a class="game h-100 w-100" href="detalle.html">
-                        <div class="card-header">
-                            <h5 style="font-size: 24px; margin-bottom: 10px;">Nombre del Juego 1</h5>
+            <div class="col-md-8 tarjeta"> <!--Tarjeta es el nombre, lo he puesto porque me mola, columnda de ancho m8 en dispositivos medios-->
+                <div class="card text-center"> <!--Cambiar estilo a css-->
+                    <a class="game" href="detalle.html"> <!--h-100 y w-100 = height and width al 100%, es estilo in-line, dentro de html-->
+                        <div class="card-header"> <!--Cabecera de card-->
+                            <h5 class="text-card-header">Nombre del Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 1</h5> <!--texto de la cabecera-->
                         </div>
-                        <div class="card-body h-75 cuerpo">
-                            <h2 class="card-title" style="font-size: 18px;">Nombre del Juego 1</h2>
-                            <p class="card-text" style="font-size: 16px;">Precio: $49.99</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid th1">
-        <div class="row" style="max-height: none;">
-            <div class="col-md-4">
-                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1">
-            </div>
-            <div class="col-md-8">
-                <div class="card text-center" style="height: 100%;">
-                    <a class="game h-100 w-100" href="detalle.html">
-                        <div class="card-header">
-                            <h5 style="font-size: 24px; margin-bottom: 10px;">Nombre del Juego 2</h5>
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title" style="font-size: 18px; margin-bottom: 10px;">Nombre del Juego 1</h2>
-                            <p class="card-text" style="font-size: 16px;">Precio: $49.99</p>
+                        <div class="card-body"> <!--Cuerpo de la card-->
+                            <h2 class="card-title">Nombre del Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 1</h2> <!--Titulo de la card-->
+                            <p class="card-text" >Precio: $Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..99</p> <!--Texto de la card-->
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid th1">
-        <div class="row" style="max-height: none;">
-            <div class="col-md-4">
-                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1">
+   
+    <div class="container-fluid th1 mb-5"> <!--Th1 es el nombre, lo he puesto porque me mola, mb5 (margen inferior) para dispositivos medios-->
+        <div class="row"> <!--Organizacion en filas de bootstrap-->
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> <!-- Al no funcionar el tamaño especifico para movil, este apaño pone el margen en todos a 5 salvo en PC-->
+                <!-- Columna con ancho medio en dispositivos grandes, sin margen en dispositivos medianos o pequeños, margen inferior comun e imagen redimensionable -->
+                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1"> <!--Cambiar imagen por la que queramos, alt es texto alternativo-->
             </div>
-            <div class="col-md-8">
-                <div class="card text-center" style="height: 100%;">
-                    <a class="game h-100 w-100" href="detalle.html">
-                        <div class="card-header">
-                            <h5 style="font-size: 24px; margin-bottom: 10px;">Nombre del Juego 3</h5>
+            <div class="col-md-8 tarjeta"> <!--Tarjeta es el nombre, lo he puesto porque me mola, columnda de ancho m8 en dispositivos medios-->
+                <div class="card text-center"> <!--Cambiar estilo a css-->
+                    <a class="game" href="detalle.html"> <!--enlace del juego-->
+                        <div class="card-header"> <!--Cabecera de card-->
+                            <h5 class="text-card-header">Nombre del Juego 1</h5> <!--texto de la cabecera-->
                         </div>
-                        <div class="card-body">
-                            <h2 class="card-title" style="font-size: 18px; margin-bottom: 10px;">Nombre del Juego 1</h2>
-                            <p class="card-text" style="font-size: 16px;">Precio: $49.99</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid th1">
-        <div class="row" style="max-height: none;">
-            <div class="col-md-4">
-                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1">
-            </div>
-            <div class="col-md-8">
-                <div class="card text-center" style="height: 100%;">
-                    <a class="game h-100 w-100" href="detalle.html">
-                        <div class="card-header">
-                            <h5 style="font-size: 24px; margin-bottom: 10px;">Nombre del Juego 1</h5>
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title" style="font-size: 18px; margin-bottom: 10px;">Nombre del Juego 1</h2>
-                            <p class="card-text" style="font-size: 16px;">Precio: $49.99</p>
+                        <div class="card-body"> <!--Cuerpo de la card-->
+                            <h2 class="card-title">Nombre del Juego 1</h2> <!--Titulo de la card-->
+                            <p class="card-text" >Precio: $49.99</p> <!--Texto de la card-->
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+   
 
 
 
   
     <!-- Agregar más juegos -->
-    </div>
-    </div>
+    
 
     <div class="text-center mt-4">
-        <a href="nuevo_elemento.html" class="btn btn-success">Crear Nuevo Elemento</a>
+        <a href="nuevo_elemento.html" class="btn btn-success">Crear Nuevo Elemento</a> <!--Boton para crear nuevo elemento, btn success es de bootstap y le da color verde-->
     </div>
-    </div>
+    
 
-    <footer class="text-center mt-4">
-        <p>&copy; 2023 Tienda de Videojuegos</p>
+    <footer class="text-center mt-4"> <!--Pie de página-->
+        <p>&copy; 2023 Tienda de Videojuegos</p> <!--&copy es el simbolo de copyright-->
     </footer>
 </body>
 

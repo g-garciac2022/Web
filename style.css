@@ -6,8 +6,30 @@ body {
     padding: 0;
 }
 
+.row {
+    max-height: none;
+}
 .container {
     margin-top: 20px;
+}
+.card {
+    background-color: white;
+    
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+ 
+  
+}
+
+.card-body {
+    padding: 20px; /* Aumenta el margen superior aquí */
+    background-color: #f9f9f9; /* Cambia el fondo del cuerpo de la tarjeta */
+    border-radius: 0 0 10px 10px; /* Borde inferior redondeado */
+}
+.text-card-header {
+    font-size: 24px; 
+    margin-bottom: 10px;
 }
 .card-title {
     font-size: 24px; /* Tamaño de fuente personalizado */
@@ -23,10 +45,8 @@ body {
     text-decoration: none; /* Quitar el subrayado al hacer hover */
     color: #007bff; /* Cambiar el color del enlace al hacer hover */
 }
-.cuerpo:hover{
-    background-color:lightgrey;
-border-radius: 10;
-
+.card-body:hover {
+    background-color: lightgrey;
 }
 
 .header {
@@ -87,19 +107,20 @@ footer {
 
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #343a40;
+    background-color: #126dc7;
 }
 
 .navbar-brand {
-    color: white;
+    color: black;
 }
 
 .navbar-nav .nav-link {
-    color: white;
+    color: darkred;
+    transition: color 0.2s; /* Agregamos una transición de color suave para la animación de hover */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: darkblue;
 }
 
 /* Estilos para el botón de "Crear Nuevo Elemento" */
