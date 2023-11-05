@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-4 mb-4">Nuevo Elemento</h1>
-        <form>
-            <div class="form-group">
+        <h1 class="mt-4 mb-4">Nuevo Elemento</h1> <!--mt-4 y mb-4 son margenes top y bottom de 4-->
+        <form role="form"> <!--role="form" es una REGLA IMPORTANTE DE LOS FORMS de bootstrap-->
+            <div class="form-group">    <!--form-group es una clase de bootstrap-->
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Introduce el nombre">
             </div>
@@ -22,8 +22,12 @@
             </div>
             <div class="form-group">
                 <label for="reseña">Reseña</label>
-                <input type="text" class="form-control" id="infoReseña" placeholder="Escribe tu reseña">
+                <input type="date" class="form-control" id="infoReseña" placeholder="Escribe tu reseña">
             </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Example file input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
         </form>
         <nav class="navegador">
             <button type="submit" class="btn btn-primary">Guardar</button>
