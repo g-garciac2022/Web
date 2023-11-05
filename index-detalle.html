@@ -34,7 +34,7 @@
                         <h6 class="card-title">Usuario</h6>
                         <p class="fs-6 lh-sm"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore
                             tempora aliquid dolorem quam architecto! Saepe, quisquam placeat! Similique doloremque id
-                            ipsam quasi! Facere rerum delectus dignissimos nihil tempore nesciunt.</p> <!--fs-6 lh-sm es para que el texto sea más pequeño (font size) y se ajuste a la card (line height)-->
+                            ipsam quasi! Facere rerum delectus dignissimos nihil tempore nesciunt.</p>
                     </div>
                     <div class="card-body reseña-usuario">
                         <h6 class="card-text">Usuario</h6>
@@ -53,14 +53,23 @@
         </div>
 
         <!-- Formulario para crear un nuevo subelemento -->
-        <div class="mt-5">
-            <h5>Añadir Reseña</h5>
-            <form>
+        <div class="mt-5 card">
+            <div class="card-body">
+                <h5>Añadir Reseña</h5>
+                <div card="card-body">
+                    <form role="form">
+                        <label for="Usuario" class="form-label">Usuario</label>
+                        <input type="email" class="form-control">
+                        <label for="Reseña" class="form-label">Reseña</label>
+                        <input type="text" class="form-control">
+                    </form>
+                </div>
 
-                <button type="submit" class="btn btn-primary mt-3">Guardar</button>
-            </form>
+                <form role="form">
+                    <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+                </form>
+            </div>
         </div>
-    </div>
     </body>
 
 </html>
