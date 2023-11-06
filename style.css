@@ -1,7 +1,18 @@
 /* Estilos generales */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F548%2Fthumb-1920-548134.jpg&f=1&nofb=1&ipt=9319547e3c0178d584791993ab603a5f8921bd7d102dc4f3daa48c09d1b463d0&ipo=images); 
+    background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
+    background-attachment: fixed; /* Mantiene la imagen fija en su posición */
+    background-position: center; /* Centra la imagen en el fondo */
+    color: #fff; /* Texto blanco */
     margin: 0;
     padding: 0;
 }
@@ -9,77 +20,71 @@ body {
 .row {
     max-height: none;
 }
+
 .container {
     margin-top: 20px;
 }
+
 .card {
-    background-color: white;
-    
+    background-color: #111; /* Fondo oscuro */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra con color claro */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
- 
-  
 }
 
-.card-body {
-    padding: 20px; /* Aumenta el margen superior aquí */
-    background-color: #f9f9f9; /* Cambia el fondo del cuerpo de la tarjeta */
-    border-radius: 0 0 10px 10px; /* Borde inferior redondeado */
-}
 .text-card-header {
-    font-size: 24px; 
+    font-size: 24px;
     margin-bottom: 10px;
+    color: #fff; /* Texto blanco */
 }
+
 .card-title {
-    font-size: 24px; /* Tamaño de fuente personalizado */
-    color: #333; /* Color de texto personalizado */
+    font-size: 24px;
+    color: #fff;
 }
 
 .card-text {
-    color: #777; /* Color de texto personalizado */
+    color: #aaa; /* Texto gris claro */
 }
 
 /* Estilos para el enlace cuando se hace hover */
 .game {
-    text-decoration: none; /* Quitar el subrayado al hacer hover */
-    color: #007bff; /* Cambiar el color del enlace al hacer hover */
-}
-.card-body:hover {
-    background-color: lightgrey;
+    text-decoration: none;
+    color: #007bff;
+    transition: 0.2s;
 }
 
 .header {
-    background-color: #343a40;
-    color: white;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
 }
 
 .header a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
 /* Tarjetas de videojuegos */
 .card {
-    background-color: white;
+    background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 10px;
-    
+    padding: 10px #555;
+    color: #fff;
+    border: 10px solid rgb(25, 238, 238);
+    transition: 0.41s;
+    &:hover {
+        border: 7px solid rgb(211, 247, 247);
+    }
 }
-
-.card-body {
-    padding: 20px; 
-}
-
-
 
 /* Botones */
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
-    color: white;
+    color: #fff;
 }
 
 .btn-primary:hover {
@@ -90,7 +95,7 @@ body {
 .btn-success {
     background-color: #28a745;
     border-color: #28a745;
-    color: white;
+    color: #fff;
 }
 
 .btn-success:hover {
@@ -100,30 +105,66 @@ body {
 
 /* Pie de página */
 footer {
-    background-color: #343a40;
-    color: white;
+    background-color: #000;
+    color: #fff;
     padding: 10px 0;
 }
 
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #126dc7;
+    background-color: #000;
 }
 
 .navbar-brand {
-    color: black;
+    color: #fff;
 }
 
 .navbar-nav .nav-link {
-    color: darkred;
-    transition: color 0.2s; /* Agregamos una transición de color suave para la animación de hover */
+    color: #aaa;
+    transition: color 0.2s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: darkblue;
+    color: #007bff;
 }
 
 /* Estilos para el botón de "Crear Nuevo Elemento" */
 .text-center .btn-success {
     margin-top: 20px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+      background: rgba(20, 20, 20, .8);
+      padding: 10px 25px;
+    }
+  }
+
+
+.partner {
+    color: #ffac14;
+    transition: 0.2s;
+    &:hover {
+        color: red;
+    }
+}
+
+.card-body:hover + .partner {
+    color: darkorange;
+}
+
+.card-body:hover {
+    background-color: #424242;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+    transition: 0.2s;
 }
