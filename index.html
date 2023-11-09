@@ -16,19 +16,21 @@ Adaptar estilo deep space
 <!DOCTYPE html> <!--caracteristicas comunes -->
 <html lang="es">
 
-<head>  <!--Cabecera de la página-->
+<head> <!--Cabecera de la página-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para que se adapte a la pantalla. Sin zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Para que se adapte a la pantalla. Sin zoom-->
     <title>Tienda de Videojuegos</title>
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!--importamos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--importamos bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"> </script>
     <link type="text/css" rel="stylesheet" href="style.css" /> <!--referencia a la pagina css-->
 
 </head>
 
-<body>  <!-- Cuerpo de la página -->
+<body> <!-- Cuerpo de la página -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light"> <!--Mantener nav ¿Qué hace?     barra de navegacion-->
             <a class="navbar-brand" href="#">Software de Videojuegos</a> <!--Cambiar href para incluir-->
@@ -38,44 +40,318 @@ Adaptar estilo deep space
     <div class="container mt-4">
         <h2 class="text-center">Catálogo de Videojuegos</h2>
     </div>
-    <div class="container-fluid th1 mb-5"> <!--Th1 es el nombre, lo he puesto porque me mola, mb5 (margen inferior) para dispositivos medios-->
+    <div class="container-fluid th1 mb-5">
+        <!--Th1 es el nombre, lo he puesto porque me mola, mb5 (margen inferior) para dispositivos medios-->
         <div class="row"> <!--Organizacion en filas de bootstrap-->
-            <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> <!-- Al no funcionar el tamaño especifico para movil, este apaño pone el margen en todos a 5 salvo en PC-->
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <!-- Al no funcionar el tamaño especifico para movil, este apaño pone el margen en todos a 5 salvo en PC-->
                 <!-- Columna con ancho medio (4) en dispositivos grandes, sin margen en dispositivos medianos o pequeños, margen inferior (mb) comun e imagen redimensionable -->
-                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1"> <!--Cambiar imagen por la que queramos, alt es texto alternativo-->
+                <img src="https://dummyimage.com/1280x720/000/fff" class="img-thumbnail" alt="Nombre del Juego 1">
+                <!--Cambiar imagen por la que queramos, alt es texto alternativo-->
             </div>
-            <div class="col-md-8 tarjeta"> <!--Tarjeta es el nombre, lo he puesto porque me mola, columnda de ancho m8 en dispositivos medios-->
+            <div class="col-md-8 tarjeta">
+                <!--Tarjeta es el nombre, lo he puesto porque me mola, columnda de ancho m8 en dispositivos medios-->
                 <div class="card text-center"> <!--Cambiar estilo a css-->
-                    <a class="game" href="detalle.html"> <!--h-100 y w-100 = height and width al 100%, es estilo in-line, dentro de html-->
+                    <a class="game" href="detalle.html">
+                        <!--h-100 y w-100 = height and width al 100%, es estilo in-line, dentro de html-->
                         <div class="card-header"> <!--Cabecera de card-->
-                            <h5 class="text-card-header">Nombre del Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 1</h5> <!--texto de la cabecera-->
+                            <h5 class="text-card-header">Nombre del Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum. 1</h5> <!--texto de la cabecera-->
                         </div>
                         <div class="card-body"> <!--Cuerpo de la card-->
-                            <h2 class="card-title">Nombre del Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 1</h2> <!--Titulo de la card-->
-                            <p class="card-text" >Precio: $Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..99</p> <!--Texto de la card-->
+                            <h2 class="card-title">Nombre del Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum. 1</h2> <!--Titulo de la card-->
+                            <p class="card-text">Precio: $Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum..99</p> <!--Texto de la card-->
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-   
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Juego 2">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Galaxia en Peligro</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: AstroGames
+                            </h2>
+                            <p class="card-text"> Una emocionante aventura espacial donde debes salvar la galaxia de una
+                                invasión alienígena. </p>
+                            <p class="card-text text-center">15 de agosto de 2022 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Juego 3">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Epic Fantasy</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: DragonForge
+                            </h2>
+                            <p class="card-text"> Un RPG de acción en un mundo de fantasía épica lleno de monstruos,
+                                magia y misterios por descubrir. </p>
+                            <p class="card-text text-center">15 de agosto de 2022 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Carabela">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Carabela</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: SPain SP
+                            </h2>
+                            <p class="card-text"> Únete a una tripulación de piratas y navega los mares en busca de
+                                tesoros y batallas navales emocionantes. </p>
+                            <p class="card-text text-center">22 de junio de 2017 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Modern Affairs">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Modern Affairs</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: Digitiki
+                            </h2>
+                            <p class="card-text"> Un juego de supervivencia en un mundo postapocalíptico, donde debes
+                                construir refugios y enfrentar amenazas mutantes</p>
+                            <p class="card-text text-center">10 de noviembre de 2020 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="DinoPark">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">DinoPark</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: DragonForge
+                            </h2>
+                            <p class="card-text">Gestiona tu propio parque de dinosaurios, cuida de estas criaturas
+                                prehistóricas y mantén a los visitantes a salvo.</p>
+                            <p class="card-text text-center">7 de abril de 2015 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Fractal">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Fractal</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: Mekanica, Inc.
+                            </h2>
+                            <p class="card-text">Un juego de estrategia donde debes manipular dimensiones fractales para
+                                ganar batallas en un mundo surreal</p>
+                            <p class="card-text text-center">18 de septiembre de 2021</p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Tales of a Monster Map Maker">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Tales of a Monster Map Maker</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: DragonForge
+                            </h2>
+                            <p class="card-text">Forma parte de un equipo de cartógrafos y explora un vasto mundo
+                                sobrenatural</p>
+                            <p class="card-text text-center">5 de febrero de 2016</p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Modern Farm Simulator III">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Modern Farm Simulator III</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: Honest Work Games
+                            </h2>
+                            <p class="card-text"> ¡Construye y gestiona tu propia granja moderna! Cultiva, cría animales
+                                y expande tu imperio agrícola en este simulador extremadamente realista que no deja de
+                                lado la diversión.. </p>
+                            <p class="card-text text-center">12 de julio de 2019 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="NEA (Not Enough Adrenaline!)">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">NEA (Not Enough Adrenaline!)</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: AstroGames
+                            </h2>
+                            <p class="card-text">Experimenta la adrenalina de las carreras extremas en una variedad de
+                                vehículos y pistas desafiantes. Vivian Díaz, desarrolladora jefe, afirma que hay más
+                                explosiones en una sola partida... ¡Qué en todas las películas de director de Michael
+                                Bay, JUNTAS!</p>
+                            <p class="card-text text-center">20 de mayo de 2018 </p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class=" col-md-4 mb-md-0 mb-3 img-fluid">
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1"
+                    class="img-thumbnail" alt="Hay tiempo para explicaciones">
+            </div>
+            <div class="col-md-8 tarjeta">
+                <div class="card text-center">
+                    <a class="game" href="pagina-detalle.html">
+                        <div class="card-header">
+                            <h5 class="text-card-header">Hay tiempo para explicaciones</h5>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">Empresa desarrolladora: SPain SP
+                            </h2>
+                            <p class="card-text">"¿Era Napoleón realmente francés?" "¿Arquímedes pilotó un avión?" "¿Y quién asesinó en realidad a Abraham Lincoln?". Descubre las respuestas a estos misteros en un viaje a través del tiempo, mientras resuelves enigmas históricos en este intrigante juego de aventuras con elementos de ciencia ficción.</p>
+                            <p class="card-text text-center">8 de diciembre de 2017</p>
+                            <p class="partner text-center">¡Colaborador oficial! </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid mb-5"> 
         <div class="row"> 
             <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> 
-                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1" class="img-thumbnail" alt="Juego 2"> 
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1" class="img-thumbnail" alt="Eldritch Mansion"> 
             </div>
             <div class="col-md-8 tarjeta"> 
                 <div class="card text-center"> 
                     <a class="game" href="pagina-detalle.html"> 
                         <div class="card-header"> 
-                            <h5 class="text-card-header">Galaxia en Peligro</h5>
+                            <h5 class="text-card-header">Eldritch Mansion</h5>
                         </div>
                         <div class="card-body"> 
-                            <h2 class="card-title">Empresa desarrolladora: AstroGames
+                            <h2 class="card-title">Empresa desarrolladora: Shooting Star Games
                             </h2> 
-                            <p class="card-text" > Una emocionante aventura espacial donde debes salvar la galaxia de una invasión alienígena. </p> 
-                            <p class="card-text text-center" >15 de agosto de 2022 </p> 
+                            <p class="card-text" >Explora una mansión misteriosa llena de secretos oscuros en este juego de terror y misterio. </p> 
+                            <p class="card-text text-center" >29 de octubre de 2022 </p> 
                             <p class="partner text-center" >¡Colaborador oficial! </p> 
                         </div>
                     </a>
@@ -83,47 +359,23 @@ Adaptar estilo deep space
             </div>
         </div>
     </div>
-   
     <div class="container-fluid mb-5"> 
         <div class="row"> 
             <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> 
-                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1" class="img-thumbnail" alt="Juego 2"> 
+                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1" class="img-thumbnail" alt="Abyssmal: Space Simulator"> 
             </div>
             <div class="col-md-8 tarjeta"> 
                 <div class="card text-center"> 
                     <a class="game" href="pagina-detalle.html"> 
                         <div class="card-header"> 
-                            <h5 class="text-card-header">Galaxia en Peligro</h5>
+                            <h5 class="text-card-header">Abyssmal: Space Simulator</h5>
                         </div>
                         <div class="card-body"> 
-                            <h2 class="card-title">Empresa desarrolladora: AstroGames
+                            <h2 class="card-title">Empresa desarrolladora: AstroGames & Honest Work Games
                             </h2> 
-                            <p class="card-text" > Una emocionante aventura espacial donde debes salvar la galaxia de una invasión alienígena. </p> 
-                            <p class="card-text text-center" >15 de agosto de 2022 </p> 
-                            <p class="partner text-center" >¡Colaborador oficial! </p> 
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid mb-5"> 
-        <div class="row"> 
-            <div class=" col-md-4 mb-md-0 mb-3 img-fluid"> 
-                <img src="https://th.bing.com/th/id/OIG.wtzPJjM9UZe_Vn9LeKw5?pid=ImgGn&w=1024&h=1024&rs=1" class="img-thumbnail" alt="Juego 2"> 
-            </div>
-            <div class="col-md-8 tarjeta"> 
-                <div class="card text-center"> 
-                    <a class="game" href="pagina-detalle.html"> 
-                        <div class="card-header"> 
-                            <h5 class="text-card-header">Galaxia en Peligro</h5>
-                        </div>
-                        <div class="card-body"> 
-                            <h2 class="card-title">Empresa desarrolladora: AstroGames
-                            </h2> 
-                            <p class="card-text" > Una emocionante aventura espacial donde debes salvar la galaxia de una invasión alienígena. </p> 
-                            <p class="card-text text-center" >15 de agosto de 2022 </p> 
-                            <p class="partner text-center" >¡Colaborador oficial! </p> 
+                            <p class="card-text" >De la mano de los grandes pioneros de los juegos espaciales, Astrogames, y de los técnicos más comprometidos con el género de la simulación, Honest Work Games, llega Abyssmal. Pilota naves espaciales, comercia, combate y explora un vasto universo en este inmenso simulador espacial de mundo abierto</p> 
+                            <p class="card-text text-center" >14 de junio de 2022 </p> 
+                            <p class="partner text-center" >¡Colaboradores oficiales! </p> 
                         </div>
                     </a>
                 </div>
@@ -133,14 +385,14 @@ Adaptar estilo deep space
 
 
 
-  
     <!-- Agregar más juegos -->
-    
+
 
     <div class="text-center mt-4">
-        <a href="nuevo_elemento.html" class="btn btn-success">Crear Nuevo Elemento</a> <!--Boton para crear nuevo elemento, btn success es de bootstap y le da color verde-->
+        <a href="añadir-elemento.html" class="btn btn-success">Crear Nuevo Elemento</a>
+        <!--Boton para crear nuevo elemento, btn success es de bootstap y le da color verde-->
     </div>
-    
+
 
     <footer class="text-center mt-4"> <!--Pie de página-->
         <p>&copy; 2023 Tienda de Videojuegos</p> <!--&copy es el simbolo de copyright-->
