@@ -1,16 +1,28 @@
-/* Estilos generales */
+/* Estilo */
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/* Importa la fuente Roboto de Google Fonts */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente a todos los elementos de la página */
 }
+
+/* Estilos para el contenedor del logo */
+.logo-container { 
+    display: flex ; 
+    justify-content: center ;
+}
+
+/* Estilos para el logo */
+
+
 .logo {
     max-width: 200px; /* Ajusta el ancho máximo del logo según sea necesario */
     height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
     margin-bottom: 10px; /* Agrega un margen inferior para separar el logo del título */
 }
+
+/* Estilos generales para el cuerpo de la página */
 body {
     background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F548%2Fthumb-1920-548134.jpg&f=1&nofb=1&ipt=9319547e3c0178d584791993ab603a5f8921bd7d102dc4f3daa48c09d1b463d0&ipo=images); 
     background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
@@ -21,21 +33,27 @@ body {
     padding: 0;
 } 
 
+/* Estilos para el contenedor del título 
+.title-container {
+    display: flex ; 
+    justify-content: center ;
+}
+
+Este ejemplo se encuentra implementado en el archivo index.html mediante bootstrap a modo educacional.
+EL resto de los estilos se encuentran en el archivo style.css con flexbox.
+
+*/
+
+
+/* Estilos para el título */
 .title{
     max-width: 400px; /* Ajusta el ancho máximo del logo según sea necesario */
     height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
     margin-bottom: 10px; /* Agrega un margen inferior para separar el logo del título */
 }
 
-.logo-container {
-    display: flex ; 
-    justify-content: center ;
-}
-.title-container {
-    display: flex ; 
-    justify-content: center ;
-}
 
+/* Estilos para el contenedor del subtítulo */
 .sub-container {
     background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -48,6 +66,8 @@ body {
         border: solid rgb(211, 247, 247);
     }
 }
+
+/* Estilos para el subtítulo */
 .subtitle {
     /* font-family: 'Arial', sans-serif;  Puedes cambiar la fuente según tus preferencias */
     font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
@@ -65,32 +85,60 @@ body {
     max-height: none;
 }
 
-.container {
-    margin-top: 20px;
+.img-fluid {
+    display: flex;
+}
+.img-thumbnail {
+    
+    margin: auto;
+   
 }
 
+/* Tarjetas de videojuegos */
+
 .card {
-    background-color: #111; /* Fondo oscuro */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra con color claro */
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    color: #fff;
+    border: 10px solid rgb(25, 238, 238);
+    transition: 0.41s;
+    &:hover {
+        border: 7px solid rgb(211, 247, 247);
+    }
 }
 
+/*.card-header {
+Usamos plantillas de bootstrap para el header de la tarjeta
+}*/
 .text-card-header {
     font-size: 24px;
     margin-bottom: 10px;
     color: #fff; /* Texto blanco */
 }
 
-.card-title {
+.card-title { /* Titulo del cuerpo de la tarjeta*/
     font-size: 24px;
     color: #fff;
 }
 
+
 .card-text {
     color: #aaa; /* Texto gris claro */
 }
+.card-body:hover {
+    background-color: #424242;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+    transition: 0.2s;
+}
+
 
 /* Estilos para el enlace cuando se hace hover */
 .game {
@@ -110,42 +158,9 @@ body {
 
 
 
-/* Tarjetas de videojuegos */
-.card {
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px #555;
-    color: #fff;
-    border: 10px solid rgb(25, 238, 238);
-    transition: 0.41s;
-    &:hover {
-        border: 7px solid rgb(211, 247, 247);
-    }
-}
 
-/* Botones */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #fff;
-}
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
 
-.btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-    color: #fff;
-}
-
-.btn-success:hover {
-    background-color: #218838;
-    border-color: #218838;
-}
 
 /* Pie de página */
 footer {
@@ -154,30 +169,6 @@ footer {
     padding: 10px 0;
 }
 
-/* Estilos para la barra de navegación */
-.navbar {
-    background-color: #190C26;
-}
-
-.navbar-brand {
-    color: #fff;
-    text-align: center;
-    width: 100%;
-}
-
-.navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-nav .nav-link {
-    color: #aaa;
-    transition: color 0.2s;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff;
-}
 
 /* Estilos para el botón de "Crear Nuevo Elemento" */
 .text-center .btn-success {
@@ -205,20 +196,8 @@ footer {
     }
 }
 
-.card-body:hover + .partner {
-    color: darkorange;
-}
 
-.card-body:hover {
-    background-color: #424242;
-}
 
-.card-body {
-    padding: 20px;
-    background-color: #000;
-    border-radius: 0 0 10px 10px;
-    transition: 0.2s;
-}
 
 footer {
     background-color: #313131;
