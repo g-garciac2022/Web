@@ -45,15 +45,16 @@ Mas comunes:
 */
 
 
-const express = require('express');
-const mustacheExpress = require('mustache-express');
-const bodyParser = require('body-parser');
-
+import express from 'express';
+import mustacheExpress from 'mustache-express';
+import bodyParser from 'body-parser';
+import zarmaRouter from './zarmaRouter.js';
+import { __dirname } from './dirname.js';
 const app = express();
 
 
 
-const path = require('path'); //modulo para trabajar con rutas de archivos y directorios
+
 
 
 
@@ -63,7 +64,7 @@ app.engine('html', mustacheExpress(), '.html');
 
 // Indicar el directorio de las vistas
 app.set('view engine', 'html');
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/../views');
 
 app.use(bodyParser.urlencoded({ extended: true })); 
 //para que pueda leer los datos del formulario y los convierta en un objeto javascript
@@ -71,24 +72,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // Configuración para servir archivos estáticos
-app.use(express.static(__dirname + '/public'));
-
-app.get('/', (req, res) => { //Solicitud / Respuesta
-    res.render('index',{});
-});
-
-// Ruta principal
-app.get('/index.html', (req, res) => { //Solicitud / Respuesta
-    res.render('index',{});
-});
+app.use(express.static(__dirname + '/../public'));
 
 
+app.use('/', zarmaRouter); //para que use el router de zarma
 
-// Route for /pagina-detalle.html
-
-app.get('/pagina-detalle.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'pagina-detalle.html'));
-});
 
 // Iniciar el servidor en el puerto 3000
 const PORT = 3000;
